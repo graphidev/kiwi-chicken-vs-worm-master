@@ -1,0 +1,122 @@
+/**
+ * Chicken character
+ * ===
+**/
+@keyframes chicken-move-position {
+
+  from {
+    transform: translateX(-350px)  translateY(0);
+  }
+
+  100% { /* =3s */
+    transform: translateX(0), translateY(0);
+  }
+
+}
+
+@keyframes chicken-move-legs {
+
+  0%, 100% {
+    transform-origin: top center;
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(-15deg);
+  }
+
+  75% {
+    transform: rotate(15deg);
+  }
+
+}
+
+@keyframes chicken-shadow {
+
+  from, to {
+    transform-origin: bottom left;
+    transform: skewX(0);
+  }
+
+  10% {
+    transform: skewX(-1deg);
+  }
+
+  50% {
+    transform: skewX(-5deg);
+  }
+
+  70% {
+    transform: skewX(-15deg);
+  }
+
+  90% {
+    transform: skewX(1deg);
+  }
+
+}
+
+.chicken {
+  animation-name: chicken-move-position;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.chicken-leg {
+  animation-name: chicken-move-legs;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5; /* =5s */
+}
+.chicken-leg[chicken-leg="left"] {
+  animation-delay: .5s;
+}
+
+
+.chicken-shadow {
+  animation-name: chicken-shadow;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/**
+ * Chicken eye blinking
+ * ---
+**/
+.chicken-eye-pupil {
+  animation-name: chicken-blinking-eye;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;;
+}
+
+@keyframes chicken-blinking-eye {
+
+  49% { opacity: 1; }
+  50% { opacity: 0; }
+  51% { opacity: 1; }
+
+}
+
+/**
+ * Chicken talk
+ * ---
+ * (yes, that chicken talks.)
+**/
+.chicken-talk {
+  opacity: 1;
+  animation-name: that-chicken-talks;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes that-chicken-talks {
+
+  0%   { opacity: 0; }
+  83.33%  { opacity: 0; }
+  100% { opacity: 1; }
+
+}

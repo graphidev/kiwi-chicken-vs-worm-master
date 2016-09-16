@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Kiwi Chicken against Worm master - yeap, that's weird.</title>
+
+        <link rel="stylesheet" href="./assets/src/css/sanitize.css">
+        <link rel="stylesheet" href="./assets/src/css/animate.css">
+
+    </head>
+
+    <body>
+
+
+        <div class="interface">
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 640">
+                    <style>@import url(https://fonts.googleapis.com/css?family=Oswald);</style>
+
+                    <!-- rain -->
+                    <pattern width="554.4" height="383.9" patternUnits="userSpaceOnUse" id="a" viewBox="9.6 -494.2 554.4 383.9" overflow="visible">
+                    <g fill="none" class="rain">
+                     <path d="M9.6-494.2H564v383.9H9.6z"/>
+                     <g stroke="#AAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" class="rain-1">
+                       <path d="M466.7-210.4L426.2-87.6M499.6-123.5L459-.8M537.1-163.5L496.6-40.8M539.1-301.5l-40.6 122.8M595.7-224.9l-40.6 122.8"/>
+                     </g>
+                     <g stroke="#AAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" class="rain-2">
+                       <path d="M41.3-224.9L.8-102.1M147.5-146.7L106.9-23.9M112-255.1L71.4-132.3"/>
+                     </g>
+                     <g stroke="#AAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" class="rain-3">
+                       <path d="M466.7-594.3l-40.5 122.8M499.6-507.4L459-384.6M537.1-547.4l-40.5 122.8M595.7-608.8L555.1-486M603.9-425.8L563.3-303"/>
+                     </g>
+                     <g stroke="#AAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" class="rain-4">
+                       <path d="M189.6-402.3L149-279.6M222.4-315.5l-40.6 122.8M259.9-355.5l-40.5 122.8M261.9-493.5l-40.6 122.8M318.5-416.8L277.9-294M326.7-233.9l-40.6 122.8M361.6-273.9L321-151.1M424.7-338.6l-40.6 122.8M389.2-447.1l-40.6 122.8"/>
+                     </g>
+                     <g stroke="#AAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" class="rain-5">
+                       <path d="M41.3-608.8L.8-486M49.5-425.8L8.9-303M84.4-465.8L43.8-343M147.5-530.5l-40.6 122.8"/>
+                     </g>
+                    </g>
+                    </pattern>
+                    <!-- /rain -->
+
+                    <!-- blue sky -->
+                    <path fill="#7C9BBD" d="M0 0h960v640H0z"/>
+                    <!-- /blue sky -->
+
+                    <!-- high mountains -->
+                    <path fill="#EEE" d="M0 217l86.5-101.7S96.3 103 96.9 103s13.1 12.3 13.1 12.3l59.4 55.5s4.1 4.3 4.6 4.3 6-3.4 6-3.4l19.2-10.8s10.3-6.4 11.3-6.4 10.2 7.2 10.2 7.2l68.5 48.5s8.9 6.4 9.8 7 12.8 2.3 12.8 2.3l39.6 7.1s13.1 2 14.7 1.6 9.6-5.5 9.6-5.5l47.3-32.2s8.3-6.3 9.1-6.2 6.1 7.6 6.1 7.6l23.8 29.7s5.2 6.4 6.1 6.6c.9.3 12.6-1.4 12.6-1.4l35.9-7s10.8-3 12.5-3.6c1.7-.6 9.4-10.3 9.4-10.3l59.3-80.2s5-7.4 6.3-7.5c1.3-.2 7.1 7.9 7.1 7.9l66.7 83.3s5.4 5.9 6.3 5.8c1.6-.1 9.5-4.8 9.5-4.8l23.9-17.1s7.3-6.1 8.5-6.1 9.9 8.1 9.9 8.1l39.1 32.1s6.1 5.3 7 5.8 7.8-.7 7.8-.7l32.6-2.9s6.3-1.2 7.6-1.7c1.3-.5 6.2-6.1 6.2-6.1l50-57.9s10.1-12.5 10.9-12.6 9.8 10.3 9.8 10.3l53 55.4v423H0V217z"/>
+                    <!-- /high mountains -->
+
+                    <!-- clouds -->
+                    <g fill="#FFF" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" class="clouds">
+                    <path d="M797 126h53M592 162h17.8s-7.6-17.6 8.4-17.6c-5.5-12.7 5.1-17.3 9.5-12.9 0 0 14.5-22.2 30.5 3.2 30.4-9.8 35.7 15.6 35.7 15.6s12.8.7 12.8 11.7H720M648 162h3M475 48h53M375 193h53M258 120h34.1s-14.5-33.2 16.1-33.2c-10.5-24.3 9.8-32.9 18.2-24.5 0 0 37.5-41.2 58.4 6.3 0 0 26.7-24.3 44.9 10.9 21.5-4.4 23.5 22.4 23.5 22.4s12.9-1.2 12.9 18.2H503M417 120h3M380 120h31M144 80h22M285 68h21"/>
+                    </g>
+                    <!-- /clouds -->
+
+                    <!-- low mountains -->
+                    <path fill="#C6E2BF" d="M0 258.8s70.8-46.7 105.5-42.1c34.7 4.7 99.8 75.5 115.1 77.6 44.5 5.9 72.9-29 108.4-20.6 11.3 2.7 78.3 43.9 165.4 46.4 47.9 1.4 103.9-31.4 156.7-40.7 39-6.9 88.3 42.3 119 23 114-72 190 3 190 3V456H0V258.8z"/>
+                    <!-- /low mountains -->
+
+                    <path class="grass" fill-rule="evenodd" clip-rule="evenodd" fill="#77A668" d="M960 375c-76.3 2.7-125.4 41.8-207.5 54.1-82.1 12.2-195.9-9.6-301.6-28.4-60.9-10.9-130.6-3.4-226.3-8.8-70.4-4-110.6-40-224.6-37.6v219.2h960V375z"/>
+
+                    <path class="grass"  fill-rule="evenodd" clip-rule="evenodd" fill="#4F7C66" d="M0 566.2c76.3 2.7 130.3-44.4 212.4-32.1 82.1 12.2 191-48 296.7-66.8 60.9-10.9 130.6-3.4 226.3-8.8 70.4-4 110.6-40 224.6-37.6V640H0v-73.8z"/>
+
+                    <path class="grass"  fill-rule="evenodd" clip-rule="evenodd" fill="#2C5747" d="M0 578c137 21.5 344.4-25.6 403.1-36.7 58.6-11.1 155 13.4 267.9-41.2 101.2-48.9 168.2-5.6 289.1 9V640H0v-62z"/>
+
+                    <path class="bigfir-part" fill="#619036" d="M472.5 412h-6.4l10.6-27H472l10.1-27h-4.5l9.4-27h-4.2l10.3-26h-4.7l10.3-25h-5.2l10.3-24h-3.7l16.4-43.3 16.4 43.3h-3.8l10.3 24h-5.1l10.3 25h-4.7l10.3 26H546l9.4 27h-4.5l10.1 27h-4.7l10.5 27h-6.3l11.5 30H461M141.3 456h8.2l-13.7-36h6.1l-13.2-35h5.8l-12.2-36h5.5l-13.4-33h6.1L107 283h6.7l-13.4-31h4.9l-21.4-56.5L62.4 252h4.8l-13.4 31h6.7l-13.4 33h6.1l-13.5 33h5.5L33 385h5.8l-13.2 35h6.2L18 456h8.3l-15 39h145"/>
+
+                    <path class="bigfir-part" fill="#619036" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M497 442h75l-11.5-30h6.3l-10.5-27h4.7l-10.1-27h4.5l-9.4-27h4.2l-10.3-26h4.7l-10.3-25h5.1l-10.3-24h3.8l-16.4-43.3-16.4 43.3h3.7l-6.8 15.6-3.5 8.4h5.2l-10.3 25h4.7l-2.1 5.4"/>
+
+                    <g class="tree" tree-type="littlefir" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+                        <path fill="#3E5627" d="M432.2 394h8.5l-14.2-23h5.7l-19.9-34.8-19.9 34.8h5.7l-14.2 23h8.5l-18.5 30h76.8z"/>
+                        <path fill="#4F362A" d="M407.7 424h10.7v22.6h-10.7z"/>
+                    </g>
+
+                    <g class="tree" tree-type="littlefir" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+                        <path fill="#556B2B" d="M236.6 390h10l-16.7-27h6.7l-23.4-40.9-23.4 40.9h6.7l-16.7 27h10l-21.7 35h90.2z"/>
+                        <path fill="#4F362A" d="M207.8 425.1h12.5v37.4h-12.5z"/>
+                    </g>
+
+                    <path class="bigfir-part" fill="#619036" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M109 495H11.3l15-39H18l13.8-36h-6.2l13.2-35H33l12.2-36h-5.5l13.5-33h-6.1l13.4-33h-6.7l13.4-31h-4.8l21.4-56.5 21.4 56.5h-4.9l9 20.2 4.4 10.8H107l13.5 33h-6.1l2.5 7.1"/>
+
+                    <g class="tree" tree-type="leafy">
+                        <path fill="#4F362A" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M323 442.2h10.1V496H323z"/>
+                        <path fill="#619036" d="M327.9 442.2s23-4 32.8-24.6c9.8-20.6 11.3-63.2 0-83.9-11.3-20.6-31.7-36.4-47.3-22.4-15.6 14-30.6 69.8-19.9 97.5 10.7 27.7 26.3 32.1 34.4 33.4z"/>
+                        <path fill="none" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M306.9 319.6c-12.8 21-22.6 65.5-13.4 89.2 10.7 27.7 26.3 32 34.4 33.4 0 0 23-4 32.8-24.6 9.8-20.6 11.3-63.2 0-83.9"/>
+                    </g>
+
+
+                    <g class="tree" tree-type="leafy">
+                        <path fill="#4F362A" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M925.8 350.2h7.4v39.6h-7.4z"/>
+                        <path fill="#619036" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M929.7 349.5s16.2-2.8 23.1-17.3c6.9-14.5 7.9-44.5 0-59s-22.3-25.6-33.3-15.8c-11 9.9-21.6 49.1-14 68.6 7.6 19.4 18.6 22.5 24.2 23.5z"/>
+                    </g>
+
+                    <g class="bush" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+                        <path fill="#556B2B" d="M880 421h-13.3s5.6-12.9-6.3-12.9c4.1-9.5-3.8-12.8-7.1-9.6 0 0-14.6-16.1-22.7 2.4 0 0-10.4-9.5-17.5 4.2-8.4-1.7-9.2 8.7-9.2 8.7s-5-.7-5 7.1h-14"/>
+                        <path fill="#5F8E35" d="M848 421h-5"/>
+                    </g>
+
+                    <g class="tree" tree-type="littlefir">
+                        <path fill="#3E5627" d="M632 366h11.4l-19-31h7.6l-26.7-46.7-26.6 46.7h7.6l-19 31h11.4l-24.8 40h102.9"/>
+                        <path fill="#4F362A" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M599.2 406h14.3v42.7h-14.3z"/>
+                        <path fill="none" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M640.4 379.5L632 366h11.4l-19-31h7.6l-26.7-46.7-26.6 46.7h7.6l-19 31h11.4l-24.8 40H621" />
+                    </g>
+
+                    <g class="bush" fill="#556B2B" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+                        <path d="M569 461h17s-7.2-16.6 8.1-16.6c-5.2-12.2 4.9-16.5 9.1-12.3 0 0 18.7-20.6 29.2 3.1 0 0 13.4-12.2 22.4 5.4 10.8-2.2 11.8 11.2 11.8 11.2s6.5-.6 6.5 9.1H691M605 461h14M624 461h1"/>
+                    </g>
+
+                    <g class="tree" tree-type="littlefir">
+                        <path fill="#3E5627" d="M182.9 395H197l-23.4-38h9.3l-32.7-57.3-32.7 57.3h9.3l-23.3 38h14l-30.4 49h126.2"/>
+                        <path fill="#4F362A" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M142.6 444.1h17.5v52.4h-17.5z"/>
+                        <path fill="none" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M190.5 407.1l-7.6-12.1H197l-23.4-38h9.3l-32.7-57.3-32.7 57.3h9.3l-23.3 38h14l-30.4 49H170"/>
+                    </g>
+
+                    <g class="bush" fill="#5F8E35" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+                        <path d="M121 506h19.9s-8.6-19.7 9.5-19.7c-6.2-14.4 5.8-19.5 10.7-14.6 0 0 22.2-24.4 34.6 3.7 0 0 15.8-14.4 26.5 6.4 12.7-2.6 13.9 13.3 13.9 13.3s7.6-1.2 7.6 10.8h21.2M190 506h17M213 506h1"/>
+                    </g>
+
+                    <g class="tree" tree-type="littlefir">
+                        <path fill="#556B2B" d="M915.5 344h7.8l-13-22h5.2l-18.3-32-18.2 32h5.2l-13.1 22h7.9l-17 27h70.4"/>
+                        <path fill="#4F362A" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M893 370.9h9.8v29.2H893z"/>
+                        <path fill="none" stroke="#555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M885.9 309.9L879 322h5.2l-13.1 22h7.9l-17 27h70.4l-13.5-21.5"/>
+                    </g>
+
+                    <g class="worm">
+                        <ellipse class="worm-shadow" opacity=".3" cx="591.6" cy="616" rx="17.5" ry="1.5"/>
+                        <g class="worm-body">
+                            <path fill="#8E4734" d="M606.2 614.3c-.7.5-1.4.9-2 1.1-1.5.5-2.9.2-4.3-.5-.6-.3-1.2-.7-1.8-1.2-.7-.5-1.2-.8-1.8-1-.3-.1-.5-.1-.8-.1-1.8-.1-3 1.7-4.8 2.8-.6.4-1.3.7-2 .8-1.3.2-2.6-.2-3.8-1-1.8-1.2-3.3-3.2-3.8-5v-.1c-.2-1.1-.5-2.8-1.2-3.8-.6-.8-1.4-1.1-2.7-.1-.7.6-1.4 1.1-2.2.9-.2-.1-.5-.2-.6-.3-1.1-.8-1.3-2.8-.9-3.9.6-2.1 2.8-4.4 5.1-4.4 2.9.1 4.1 1.9 4.8 4 .4 1.1.6 2.2 1 3.3.2.6.4 1.3.7 1.9.6 1.4 1.5 2.7 2.7 3 .8.2 1.7-.1 2.7-1.2l.1-.1c.8-.9 1.5-1.9 2.4-2.6 1.5-1.3 3.1-1.9 5 .5.1.2.3.4.4.6.7 1.1 1.2 2.4 2.6 2.8.2 0 .3.1.4.1 1 .1 1.4-.4 1.9-1 .3-.3.6-.7 1.1-.9 1.7-.8 3-.3 3.7 1.4.1.2.2.4.2.6.3 1.4-.6 2.3-2.1 3.4z"/>
+                            <path class="worm-stripes" fill="#A55849" d="M585.1 607.4c-.1.2-.1.3-.2.5-.4.7-1.3 1.6-2.2 2-.5.2-1 .2-1.5 0-.2-1.1-.5-2.8-1.2-3.8l.3-.3c.5-.3.8-.6 1.2-1 .3-.3.6-.7.9-1 .4-.4.7-1.1 1.1-1.5.4 1.1.6 2.2 1 3.3.1.6.3 1.2.6 1.8zM591.7 613.4c-.1.7-.4 1.3-.9 1.9-.6.4-1.3.7-2 .8-1.3.2-2.6-.2-3.8-1 .1-.4.5-.8.9-1.1.2-.2.5-.4.6-.5.8-.8 1-1.8 1.2-2.8 0-.1 0-.2.1-.2.8.2 1.7-.1 2.7-1.2.6.9 1.1 2 1.2 3.1v1zM597.8 610.3c-.1.2-.2.5-.3.9-.3.6-.6 1.2-1.1 1.4-.3-.1-.5-.1-.8-.1-.2-.3-.2-1.1-.3-1.6 0-.1 0-.2-.1-.3-.3-.9-.8-1.6-1.3-2.4-.2-.4-1-1.1-1.1-1.5v-.2c1.5-1.3 3.1-1.9 5 .5.1.2.3.4.4.6.2.9-.1 1.9-.4 2.7zM604.2 615.3c-1.5.6-2.9.3-4.3-.5 0-.2 0-.6.2-.9.2-.5.4-1 .7-1.4.3-.6.5-1.2.6-1.9 1 .1 1.4-.4 1.9-1h.3c.4.2.5.8.6 1.2l.3 1.8v.7c-.1.6-.1 1.4-.3 2z"/>
+                            <circle class="worm-eye" fill="#FFF" cx="577.3" cy="600.3" r=".7"/>
+                        </g>
+
+                        <g class="worm-talk">
+                            <circle cx="555" cy="585" r="3" fill="#fff"></circle>
+                            <circle cx="540" cy="570" r="6" fill="#fff"></circle>
+                            <circle cx="525" cy="550" r="9" fill="#fff"></circle>
+                            <ellipse cx="515" cy="500" rx="100" ry="50" fill="#fff"></ellipse>
+                            <text x="470" y="510" fill="#555" font-family="'Oswald'" font-size="16">
+                                He... he... he... ! 💣
+                            </text>
+                        </g>
+
+                    </g>
+
+                    <g class="chicken">
+
+                        <g class="chicken-talk">
+                            <circle cx="325" cy="485" r="3" fill="#fff"></circle>
+                            <circle cx="340" cy="470" r="6" fill="#fff"></circle>
+                            <circle cx="355" cy="450" r="9" fill="#fff"></circle>
+                            <ellipse cx="365" cy="400" rx="100" ry="50" fill="#fff"></ellipse>
+                            <text x="320" y="400" fill="#555" font-family="'Oswald'" font-size="16">
+                                <tspan x="320" dy="0">Is that the boss ?</tspan>
+                                <tspan x="320" dy="18">For real ?!</tspan>
+                            </text>
+                        </g>
+
+                        <ellipse class="chicken-shadow" opacity=".3" cx="283.2" cy="592.9" rx="44.3" ry="9.6"/>
+                        <path class="chicken-leg" chicken-leg="right" fill-rule="evenodd" clip-rule="evenodd" fill="#111820" d="M280.8 588.8c-1.7.1-8 .8-9.1-.3-1-1.1-.3-.7.6-1.1.8-.4.7-1.8 0-1.2-.7.6-1.7.9-1.7.9s.4-1.7.7-3.4c0 0 2.8-21.7 1.2-21.7H268c-1.7-2 .4 14.6 1.2 20.5-.9 4.6-3.8 4.5-4.8 5.3-1.2.9-4.1 3-4.1 3 .3 1.1 3.3-.4 4.1-1.1.8-.7 1.6-1.4 1.9-.5.4.8 1.8 2.7 4.2 3.5 2.5.8 3.7 1.7 4.8 2.1.4.2 1-1.3-.8-2.1-1.8-.9-3-1.5-3.5-2.2-.5-.7 2-.2 4.1-.1 2.1.1 5.8-.4 6.5-.6.7-.2 2.4.3 2.4-1 .1-1.3-1.5-.2-3.2 0z"/>
+                        <path class="chicken-leg" chicken-leg="left" fill-rule="evenodd" clip-rule="evenodd" fill="#111820" d="M266.3 588.3c-1.7.1-8 .8-9.1-.3-1-1.1-.3-.7.6-1.1.8-.4.7-1.8 0-1.2-.7.6-1.7.9-1.7.9s.4-1.9.7-3.6c0 0 2.8-20.9 1.2-21.9h-4.5c-1.7-2 .4 14.8 1.2 20.8-.9 4.6-3.8 4.6-4.8 5.4-1.2.9-4.1 3-4.1 3 .3 1.1 3.3-.3 4.1-1 .8-.7 1.6-1.4 1.9-.5.4.8 1.8 2.7 4.2 3.5 2.5.8 3.7 1.7 4.8 2.1.4.2 1-1.2-.8-2.1-1.8-.9-3-1.5-3.5-2.2-.5-.7 2-.2 4.1-.1 2.1.1 5.8-.4 6.5-.6.7-.2 2.4.3 2.4-1s-1.5-.3-3.2-.1z"/>
+                        <path fill="#4F362A" d="M307.1 496.3c-3-.8-6.1-.4-8.7.9-5.6 2.2-12 2.7-18.3 1.1-.9-.2-1.8-.5-2.7-.8-1.3-.5-2.6-.9-4-1.3-19-4.9-38.5 6.5-43.4 25.6-4.4 17.2 4.5 34.7 20.2 41.5v.7c0 3.3 2.6 5.9 5.9 5.9 2.5 0 4.6-1.5 5.5-3.7.9.1 1.7.1 2.6.1.9 2.1 3 3.6 5.4 3.6 3.1 0 5.6-2.3 5.9-5.3 11.2-3.6 20.4-12.7 23.5-25 .5-2 .9-4.1 1-6.1.1-.8.2-1.6.4-2.4 1.4-5.4 5.1-9.6 9.8-11.7.2-.1.3-.2.4-.3 2.6-1.6 4.6-4.2 5.4-7.5 1.9-6.7-2.2-13.6-8.9-15.3z"/>
+                        <g class="chicken-beak">
+                            <path fill="#111820" d="M313 508.5v.5c.2 1.2 1.2 2.1 2.4 2.2 13.3 1.2 23.9 11.7 25.2 24.9.1-.9.1-1.8.1-2.7 0-14.3-10.9-26.2-24.8-27.6-1.5-.2-2.9 1.1-2.9 2.7z"/>
+                            <path opacity=".5" fill="#A1967A" d="M313 508.5v.5c.2 1.2 1.2 2.1 2.4 2.2 13.3 1.2 23.9 11.7 25.2 24.9.1-.9.1-1.8.1-2.7 0-14.3-10.9-26.2-24.8-27.6-1.5-.2-2.9 1.1-2.9 2.7z"/>
+                            <path fill="#111820" d="M313.1 509c.2 1.2 1.2 2.1 2.4 2.2 13.3 1.2 23.9 11.7 25.2 24.9v-.8c0-14.6-11.8-26.4-26.4-26.4-.4.1-.8.1-1.2.1z"/>
+                        </g>
+                        <g class="chicken-eye">
+                         <circle fill="#111820" cx="306.9" cy="505.8" r="2.9"/>
+                         <circle class="chicken-eye-pupil" opacity=".5" fill="#A1967A" cx="306.3" cy="505.2" r="1.7"/>
+                        </g>
+                    </g>
+
+                    <!-- lifebar -->
+                    <g class="interface">
+
+                        <text transform="translate(875 49.722)" fill="#555" font-family="'Oswald'" font-size="30">523</text>
+
+                        <g class="lifebar">
+                            <path fill="#FFF" stroke="#555" stroke-width="3" stroke-miterlimit="10" d="M848.3 45.2h-160c-3.8 0-7-3.1-7-7 0-3.8 3.2-7 7-7h160c3.9 0 7 3.1 7 7s-3.1 7-7 7z"/>
+                            <path class="lifebar-value" fill="#FBB03B" d="M807.8 43.8H688c-3 0-5.4-2.5-5.4-5.6 0-3.1 2.4-5.6 5.4-5.6h119.8v11.2z"/>
+                        </g>
+
+                        <g class="interface-lifes">
+
+                            <path class="heart" opacity=".5" fill="#D75A4A" d="M122.2 30.3c1.1-2.6 3.6-4.4 6.4-4.4 3.9 0 6.7 3.3 7 7.3 0 0 .2 1-.2 2.7-.6 2.4-1.9 4.5-3.7 6.2l-9.5 8.5-9.4-8.5c-1.8-1.6-3.1-3.8-3.7-6.2-.4-1.8-.2-2.7-.2-2.7.4-3.9 3.1-7.3 7-7.3 2.9 0 5.2 1.8 6.3 4.4z"/>
+
+                            <path fill="#D75A4A" d="M84.4 30.3c1.1-2.6 3.6-4.4 6.4-4.4 3.9 0 6.7 3.3 7 7.3 0 0 .2 1-.2 2.7-.6 2.4-1.9 4.5-3.7 6.2l-9.5 8.5-9.4-8.5c-1.8-1.6-3.1-3.8-3.7-6.2-.4-1.8-.2-2.7-.2-2.7.4-3.9 3.1-7.3 7-7.3 3 0 5.3 1.8 6.3 4.4zM46.7 30.3c1.1-2.6 3.6-4.4 6.4-4.4 3.9 0 6.7 3.3 7 7.3 0 0 .2 1-.2 2.7-.6 2.4-1.9 4.5-3.7 6.2l-9.5 8.5-9.4-8.5c-1.8-1.6-3.1-3.8-3.7-6.2-.4-1.8-.2-2.7-.2-2.7.4-3.9 3.1-7.3 7-7.3 2.9 0 5.2 1.8 6.3 4.4z"/>
+                        </g>
+
+                    </g>
+                    <!-- /lifebar -->
+
+
+
+                    <!-- rain layer -->
+                    <!-- <pattern id="b" xlink:href="#a"/>
+                    <path fill="url(#b)" d="M0 0h960v640H0z"/> -->
+                    <!-- /rain layer -->
+
+                    <!-- <rect class="lightning" x="0" y="0" width="960" height="640" fill="#fff"> -->
+
+            </svg>
+
+        </div>
+
+    </body>
+
+</html>

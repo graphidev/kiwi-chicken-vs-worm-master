@@ -1,0 +1,94 @@
+/**
+ * Worm character
+ * ===
+**/
+
+.worm {
+  transform-origin: center center;
+  animation-name: worm-move-position;
+  animation-duration: 5s;
+  animation-timing-function:  ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes worm-move-position {
+
+  from {
+    transform: translateX(350px);
+  }
+
+  100% {  /* =3s */
+    transform: translateX(0);
+  }
+
+}
+
+/**
+ * Worm body move
+ * ---
+ * Shake that body
+ * https://www.youtube.com/watch?v=ncqaR5WbSQk
+**/
+.worm-body {
+  animation-name: worm-shake-that-body;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 5; /* =5s */
+}
+
+@keyframes worm-shake-that-body {
+
+    0%, 100% {
+      transform-origin: center center;
+      transform: skewX(0);
+    }
+
+    25% {
+      transform: skewX(-15deg);
+    }
+
+    75% {
+      transform: skewX(15deg);
+    }
+
+}
+
+/**
+ * Worm blinking eye
+ * ---
+**/
+.worm-eye {
+  animation-name: worm-blinking-eye;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;;
+}
+
+@keyframes worm-blinking-eye {
+
+  40% { opacity: 1; }
+  50% { opacity: 0; }
+  60% { opacity: 1; }
+
+}
+
+/**
+ * Worm talk
+ * ---
+ * (yes, that worm talks too.)
+**/
+.worm-talk {
+  opacity: 1;
+  animation-name: that-worm-talks;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes that-worm-talks {
+
+  0%   { opacity: 0; }
+  87.5%  { opacity: 0; }
+  100% { opacity: 1; }
+
+}

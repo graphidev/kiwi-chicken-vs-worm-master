@@ -1,0 +1,194 @@
+/**
+ * Decor
+ * ===
+**/
+
+/**
+ * It's raining !
+ * ---
+**/
+[class^="rain-"] {
+  animation-name: raining;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: .6s;
+}
+
+@keyframes raining {
+
+  0% {
+    transform: translate(0, -100%);
+  }
+
+  99% {
+    transform: translate(0, 100%);
+  }
+
+  100% {
+    transform: translate(0, -100%);
+  }
+
+}
+
+
+/**
+ * Flash light
+ * ---
+**/
+
+.lightning {
+  animation-name: lightning;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@keyframes lightning {
+
+  0%, 96%, 98%, 100% {
+    opacity: 0;
+  }
+
+  97%,
+  99% {
+    opacity: .7;
+  }
+
+}
+
+/**
+ * Clouds animation
+ * ---
+**/
+.clouds {
+  animation-name: clouds-wind;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes clouds-wind {
+
+  from {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+
+}
+
+/**
+ * Little fir
+ * ---
+**/
+.tree[tree-type="littlefir"] {
+  animation-name: littlefir-wind;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.tree[tree-type="littlefir"]:nth-child(even) {
+  animation-delay: .5s;
+}
+
+@keyframes littlefir-wind {
+
+  from, to {
+    transform-origin: bottom center;
+    transform: rotate(0) skewX(0);
+  }
+
+  10% {
+    transform: rotate(1deg) skewX(-1deg);
+  }
+
+  50% {
+    transform: rotate(2deg) skewX(-5deg);
+  }
+
+  70% {
+    transform: rotate(3deg) skewX(-15deg);
+  }
+
+  90% {
+    transform: rotate(-2deg) skewX(1deg);
+  }
+
+}
+
+
+/**
+ * leafy trees
+ * ---
+**/
+@keyframes leafy-wind {
+
+  from, to {
+    transform-origin: bottom center;
+    transform: rotate(0) skewX(0);
+  }
+
+  10% {
+    transform: rotate(1deg) skewX(-1deg);
+  }
+
+  50% {
+    transform: rotate(2deg) skewX(-5deg);
+  }
+
+  70% {
+    transform: rotate(3deg) skewX(-15deg);
+  }
+
+  90% {
+    transform: rotate(-2deg) skewX(1deg);
+  }
+
+}
+
+.tree[tree-type="leafy"] {
+  animation-name: leafy-wind;
+  animation-duration: 2s;
+  animation-delay: .2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+
+/**
+ * Bushes
+**/
+.bush {
+  animation-name: bushes-wind;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bushes-wind {
+
+  from, to {
+    transform-origin: bottom left;
+    transform: skewX(0);
+  }
+
+  10% {
+    transform: skewX(-1deg);
+  }
+
+  50% {
+    transform: skewX(-5deg);
+  }
+
+  70% {
+    transform: skewX(-15deg);
+  }
+
+  90% {
+    transform: skewX(1deg);
+  }
+
+}
