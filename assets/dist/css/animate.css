@@ -1,0 +1,743 @@
+/**
+ * Animation
+ * ===
+**/
+/**
+ * Decor
+ * ===
+**/
+/**
+ * It's raining !
+ * ---
+**/
+[class^="rain-"] {
+  -webkit-animation-name: raining;
+          animation-name: raining;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+}
+@-webkit-keyframes raining {
+
+  0% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+
+  99% {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+
+  100% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+
+}
+@keyframes raining {
+
+  0% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+
+  99% {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+
+  100% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+
+}
+/**
+ * Flash light
+ * ---
+**/
+.lightning {
+  -webkit-animation-name: lightning;
+          animation-name: lightning;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+@-webkit-keyframes lightning {
+
+  0%, 96%, 98%, 100% {
+    opacity: 0;
+  }
+
+  97%,
+  99% {
+    opacity: .7;
+  }
+
+}
+@keyframes lightning {
+
+  0%, 96%, 98%, 100% {
+    opacity: 0;
+  }
+
+  97%,
+  99% {
+    opacity: .7;
+  }
+
+}
+/**
+ * Clouds animation
+ * ---
+**/
+.clouds {
+  -webkit-animation-name: clouds-wind;
+          animation-name: clouds-wind;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes clouds-wind {
+
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+
+}
+@keyframes clouds-wind {
+
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+
+}
+/**
+ * Little fir
+ * ---
+**/
+.tree[tree-type="littlefir"] {
+  -webkit-animation-name: littlefir-wind;
+          animation-name: littlefir-wind;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.tree[tree-type="littlefir"]:nth-child(even) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+@-webkit-keyframes littlefir-wind {
+
+  from, to {
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+    -webkit-transform: rotate(0) skewX(0);
+            transform: rotate(0) skewX(0);
+  }
+
+  10% {
+    -webkit-transform: rotate(1deg) skewX(-1deg);
+            transform: rotate(1deg) skewX(-1deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(2deg) skewX(-5deg);
+            transform: rotate(2deg) skewX(-5deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg) skewX(-15deg);
+            transform: rotate(3deg) skewX(-15deg);
+  }
+
+  90% {
+    -webkit-transform: rotate(-2deg) skewX(1deg);
+            transform: rotate(-2deg) skewX(1deg);
+  }
+
+}
+@keyframes littlefir-wind {
+
+  from, to {
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+    -webkit-transform: rotate(0) skewX(0);
+            transform: rotate(0) skewX(0);
+  }
+
+  10% {
+    -webkit-transform: rotate(1deg) skewX(-1deg);
+            transform: rotate(1deg) skewX(-1deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(2deg) skewX(-5deg);
+            transform: rotate(2deg) skewX(-5deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg) skewX(-15deg);
+            transform: rotate(3deg) skewX(-15deg);
+  }
+
+  90% {
+    -webkit-transform: rotate(-2deg) skewX(1deg);
+            transform: rotate(-2deg) skewX(1deg);
+  }
+
+}
+/**
+ * leafy trees
+ * ---
+**/
+@-webkit-keyframes leafy-wind {
+
+  from, to {
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+    -webkit-transform: rotate(0) skewX(0);
+            transform: rotate(0) skewX(0);
+  }
+
+  10% {
+    -webkit-transform: rotate(1deg) skewX(-1deg);
+            transform: rotate(1deg) skewX(-1deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(2deg) skewX(-5deg);
+            transform: rotate(2deg) skewX(-5deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg) skewX(-15deg);
+            transform: rotate(3deg) skewX(-15deg);
+  }
+
+  90% {
+    -webkit-transform: rotate(-2deg) skewX(1deg);
+            transform: rotate(-2deg) skewX(1deg);
+  }
+
+}
+@keyframes leafy-wind {
+
+  from, to {
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+    -webkit-transform: rotate(0) skewX(0);
+            transform: rotate(0) skewX(0);
+  }
+
+  10% {
+    -webkit-transform: rotate(1deg) skewX(-1deg);
+            transform: rotate(1deg) skewX(-1deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(2deg) skewX(-5deg);
+            transform: rotate(2deg) skewX(-5deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg) skewX(-15deg);
+            transform: rotate(3deg) skewX(-15deg);
+  }
+
+  90% {
+    -webkit-transform: rotate(-2deg) skewX(1deg);
+            transform: rotate(-2deg) skewX(1deg);
+  }
+
+}
+.tree[tree-type="leafy"] {
+  -webkit-animation-name: leafy-wind;
+          animation-name: leafy-wind;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+/**
+ * Bushes
+**/
+.bush {
+  -webkit-animation-name: bushes-wind;
+          animation-name: bushes-wind;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes bushes-wind {
+
+  from, to {
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    -webkit-transform: skewX(0);
+            transform: skewX(0);
+  }
+
+  10% {
+    -webkit-transform: skewX(-1deg);
+            transform: skewX(-1deg);
+  }
+
+  50% {
+    -webkit-transform: skewX(-5deg);
+            transform: skewX(-5deg);
+  }
+
+  70% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+
+  90% {
+    -webkit-transform: skewX(1deg);
+            transform: skewX(1deg);
+  }
+
+}
+@keyframes bushes-wind {
+
+  from, to {
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    -webkit-transform: skewX(0);
+            transform: skewX(0);
+  }
+
+  10% {
+    -webkit-transform: skewX(-1deg);
+            transform: skewX(-1deg);
+  }
+
+  50% {
+    -webkit-transform: skewX(-5deg);
+            transform: skewX(-5deg);
+  }
+
+  70% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+
+  90% {
+    -webkit-transform: skewX(1deg);
+            transform: skewX(1deg);
+  }
+
+}
+/**
+ * Chicken character
+ * ===
+**/
+@-webkit-keyframes chicken-move-position {
+
+  from {
+    -webkit-transform: translateX(-350px)  translateY(0);
+            transform: translateX(-350px)  translateY(0);
+  }
+
+  100% { /* =3s */
+    -webkit-transform: translateX(0), translateY(0);
+            transform: translateX(0), translateY(0);
+  }
+
+}
+@keyframes chicken-move-position {
+
+  from {
+    -webkit-transform: translateX(-350px)  translateY(0);
+            transform: translateX(-350px)  translateY(0);
+  }
+
+  100% { /* =3s */
+    -webkit-transform: translateX(0), translateY(0);
+            transform: translateX(0), translateY(0);
+  }
+
+}
+@-webkit-keyframes chicken-move-legs {
+
+  0%, 100% {
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  25% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+
+}
+@keyframes chicken-move-legs {
+
+  0%, 100% {
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  25% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+
+}
+@-webkit-keyframes chicken-shadow {
+
+  from, to {
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    -webkit-transform: skewX(0);
+            transform: skewX(0);
+  }
+
+  10% {
+    -webkit-transform: skewX(-1deg);
+            transform: skewX(-1deg);
+  }
+
+  50% {
+    -webkit-transform: skewX(-5deg);
+            transform: skewX(-5deg);
+  }
+
+  70% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+
+  90% {
+    -webkit-transform: skewX(1deg);
+            transform: skewX(1deg);
+  }
+
+}
+@keyframes chicken-shadow {
+
+  from, to {
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    -webkit-transform: skewX(0);
+            transform: skewX(0);
+  }
+
+  10% {
+    -webkit-transform: skewX(-1deg);
+            transform: skewX(-1deg);
+  }
+
+  50% {
+    -webkit-transform: skewX(-5deg);
+            transform: skewX(-5deg);
+  }
+
+  70% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+
+  90% {
+    -webkit-transform: skewX(1deg);
+            transform: skewX(1deg);
+  }
+
+}
+.chicken {
+  -webkit-animation-name: chicken-move-position;
+          animation-name: chicken-move-position;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+.chicken-leg {
+  -webkit-animation-name: chicken-move-legs;
+          animation-name: chicken-move-legs;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5; /* =5s */
+}
+.chicken-leg[chicken-leg="left"] {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+.chicken-shadow {
+  -webkit-animation-name: chicken-shadow;
+          animation-name: chicken-shadow;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+/**
+ * Chicken eye blinking
+ * ---
+**/
+.chicken-eye-pupil {
+  -webkit-animation-name: chicken-blinking-eye;
+          animation-name: chicken-blinking-eye;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;;
+}
+@-webkit-keyframes chicken-blinking-eye {
+
+  49% { opacity: 1; }
+  50% { opacity: 0; }
+  51% { opacity: 1; }
+
+}
+@keyframes chicken-blinking-eye {
+
+  49% { opacity: 1; }
+  50% { opacity: 0; }
+  51% { opacity: 1; }
+
+}
+/**
+ * Chicken talk
+ * ---
+ * (yes, that chicken talks.)
+**/
+.chicken-talk {
+  opacity: 1;
+  -webkit-animation-name: that-chicken-talks;
+          animation-name: that-chicken-talks;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+@-webkit-keyframes that-chicken-talks {
+
+  0%   { opacity: 0; }
+  83.33%  { opacity: 0; }
+  100% { opacity: 1; }
+
+}
+@keyframes that-chicken-talks {
+
+  0%   { opacity: 0; }
+  83.33%  { opacity: 0; }
+  100% { opacity: 1; }
+
+}
+/**
+ * Worm character
+ * ===
+**/
+.worm {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-animation-name: worm-move-position;
+          animation-name: worm-move-position;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function:  ease-in-out;
+          animation-timing-function:  ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+@-webkit-keyframes worm-move-position {
+
+  from {
+    -webkit-transform: translateX(350px);
+            transform: translateX(350px);
+  }
+
+  100% {  /* =3s */
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+}
+@keyframes worm-move-position {
+
+  from {
+    -webkit-transform: translateX(350px);
+            transform: translateX(350px);
+  }
+
+  100% {  /* =3s */
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+}
+/**
+ * Worm body move
+ * ---
+ * Shake that body
+ * https://www.youtube.com/watch?v=ncqaR5WbSQk
+**/
+.worm-body {
+  -webkit-animation-name: worm-shake-that-body;
+          animation-name: worm-shake-that-body;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5; /* =5s */
+}
+@-webkit-keyframes worm-shake-that-body {
+
+    0%, 100% {
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-transform: skewX(0);
+              transform: skewX(0);
+    }
+
+    25% {
+      -webkit-transform: skewX(-15deg);
+              transform: skewX(-15deg);
+    }
+
+    75% {
+      -webkit-transform: skewX(15deg);
+              transform: skewX(15deg);
+    }
+
+}
+@keyframes worm-shake-that-body {
+
+    0%, 100% {
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-transform: skewX(0);
+              transform: skewX(0);
+    }
+
+    25% {
+      -webkit-transform: skewX(-15deg);
+              transform: skewX(-15deg);
+    }
+
+    75% {
+      -webkit-transform: skewX(15deg);
+              transform: skewX(15deg);
+    }
+
+}
+/**
+ * Worm blinking eye
+ * ---
+**/
+.worm-eye {
+  -webkit-animation-name: worm-blinking-eye;
+          animation-name: worm-blinking-eye;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;;
+}
+@-webkit-keyframes worm-blinking-eye {
+
+  40% { opacity: 1; }
+  50% { opacity: 0; }
+  60% { opacity: 1; }
+
+}
+@keyframes worm-blinking-eye {
+
+  40% { opacity: 1; }
+  50% { opacity: 0; }
+  60% { opacity: 1; }
+
+}
+/**
+ * Worm talk
+ * ---
+ * (yes, that worm talks too.)
+**/
+.worm-talk {
+  opacity: 1;
+  -webkit-animation-name: that-worm-talks;
+          animation-name: that-worm-talks;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+@-webkit-keyframes that-worm-talks {
+
+  0%   { opacity: 0; }
+  87.5%  { opacity: 0; }
+  100% { opacity: 1; }
+
+}
+@keyframes that-worm-talks {
+
+  0%   { opacity: 0; }
+  87.5%  { opacity: 0; }
+  100% { opacity: 1; }
+
+}
+
+/*# sourceMappingURL=animate.css.map */
